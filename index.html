@@ -5,11 +5,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css"
+        integrity="sha512-F7WyTLiiiPqvu2pGumDR15med0MDkUIo5VTVyyfECR5DZmCnDhti9q5VID02ItWjq6fvDfMaBaDl2J3WdL1uxA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Allison&family=Glory:wght@200;300;400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>BillSplitter</title>
 </head>
 
 <body>
+    <section class="billsplitter container col-12 col-m-10 col-lg-5 mt-5 mb-5">
+        <header>
+            <h1>BillSplitter</h1>
+            <p class="billsplitter__text">Podziel się rachunkiem ze znajomymi</p>
+        </header>
+        <div class="hero m-3">
+            <div class="form-floating mb-3 mt-4">
+                <input type="number" class="form-control" id="billValue" placeholder="1">
+                <label for="billValue"><i class="fas fa-file-invoice-dollar"></i> Kwota do zapłaty </label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="persons" placeholder="1">
+                <label for="persons"><i class="fas fa-users"></i> Ilość osób</label>
+            </div>
+            <div class="form-floating mb-5">
+                <select class="form-select" id="tipPercentage" aria-label="Floating label select example">
+                    <option selected disabled>Wybierz procent napiwku</option>
+                    <option value="0.5">5%</option>
+                    <option value="0.1">10%</option>
+                    <option value="0.15">15%</option>
+                    <option value="0.2">20%</option>
+                    <option value="0.25">25%</option>
+                    <option value="0.3">30%</option>
+                </select>
+                <label for="tipPercentage">Wysokość napiwku </label>
+            </div>
+            <button class="btn">Oblicz</button>
+            <div class="result mt-5">
+                <p class="result__warning">Uzupełnij wszystkie pola!</p>
+                <p class="result__text">Powinniście się złozyć po: <span class="result__price"> </span> zł <i class="far fa-smile-beam"></i></p>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.min.js"
+        integrity="sha512-NWNl2ZLgVBoi6lTcMsHgCQyrZVFnSmcaa3zRv0L3aoGXshwoxkGs3esa9zwQHsChGRL4aLDnJjJJeP6MjPX46Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="app.js"></script>
 </body>
 
