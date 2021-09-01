@@ -18,24 +18,25 @@
 </head>
 
 <body>
-    <section class="billsplitter container col-12 col-m-10 col-lg-6 col-xl-5 mt-5 mb-5">
+    <section class="billsplitter container col-12 col-m-10 col-lg-6 col-xl-5 mt-4 mb-4">
         <header>
             <h1>BillSplitter</h1>
             <p class="billsplitter__text text-center">Podziel się rachunkiem ze znajomymi</p>
         </header>
-        <div class="hero m-3">
-            <div class="form-floating mb-3 mt-4">
+        <div class="hero m-2">
+            <div class="form-floating mb-2 mt-3">
                 <input type="number" class="bill-value form-control" id="billValue" placeholder="1">
                 <label for="billValue"><i class="fas fa-file-invoice-dollar"></i> Kwota do zapłaty </label>
             </div>
-            <div class="form-floating mb-3">
+            <div class="form-floating mb-2">
                 <input type="number" class="person-nr form-control" id="persons" placeholder="1">
-                <label for="persons"><i class="fas fa-users"></i> Ilość osób</label>
+                <label for="persons"><i class="fas fa-users"></i> Liczba osób</label>
             </div>
-            <div class="form-floating mb-5">
+            <div class="form-floating mb-4">
                 <select class="form-select" id="tipPercentage">
                     <option selected disabled>Wybierz procent napiwku</option>
-                    <option value="0.5">5%</option>
+                    <option value="0.0">0% - jestem dusigroszem</option>
+                    <option value="0.05">5%</option>
                     <option value="0.1">10%</option>
                     <option value="0.15">15%</option>
                     <option value="0.2">20%</option>
@@ -45,7 +46,7 @@
                 <label for="tipPercentage">Wysokość napiwku </label>
             </div>
             <button class="btn">Oblicz</button>
-            <div class="result mt-5">
+            <div class="result mt-4">
                 <p class="result__warning">Uzupełnij wszystkie pola!</p>
                 <p class="result__text">Powinniście się złozyć po: <span class="result__amount"> </span> zł <i class="far fa-smile-beam"></i></p>
             </div>
