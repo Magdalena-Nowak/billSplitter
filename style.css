@@ -34,7 +34,7 @@ body {
 }
 
 .billsplitter__text {
-  font-size: 35px;
+  font-size: 45px;
   font-family: "Allison", cursive;
 }
 
@@ -70,7 +70,7 @@ body {
   font-weight: bolder;
 }
 
-.result__price {
+.result__amount {
   background-image: linear-gradient(
     -225deg,
     #231557 0%,
@@ -86,4 +86,8 @@ body {
 
 .result__warning, .result__text {
   display: none;
+}
+
+.active {
+  display: inline;
 }
